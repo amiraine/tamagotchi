@@ -5,7 +5,23 @@
     <title>template</title>
   </head>
   <body>
-    <button id="theButton" type="button" name="button">Random Number</button>
-    <span id="output"></span>
+    <div class="container-fluid">
+      <form id="nameInput">
+        <input type="text" id="yourName" placeholder="Your pet's name">
+        <button type="submit">Submit</button>
+      </form>
+      <div class="pet-actions d-none">
+        <button type="button" class="btn btn-light" id="eat">Feed</button>
+        <button type="button" class="btn btn-info" id="sleep">Rest</button>
+        <button type="button" class="btn btn-warning" id="play">Play</button>
+      </div>
+      <div class="stats d-none">
+        <h3>timer: <span id="minutes"></span>:<span id="seconds"></span></h3>
+        <h1><span id=tama-name></span>:</h1>
+        <h2>Hunger: <span id="hungerBar"></span></h2>
+        <h2>Rest: <span id="restBar"></span></h2>
+        <h2>Happiness: <span id="happyBar"></span></h2>
+      </div>
+    </div>
   </body>
 </html>

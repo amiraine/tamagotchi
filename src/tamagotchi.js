@@ -45,6 +45,11 @@ class Tamagotchi {
   giveHappiness(smile){
     this.happiness += 5 * smile;
   }
+  giveDeath(){
+    if(this.hunger <= 0 || this.rest <= 0 || this.happiness <= 0){
+      return this.name + "has died! Try again?";
+    }
+  }
 }
 
 export { Tamagotchi };
